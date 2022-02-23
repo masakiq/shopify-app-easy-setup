@@ -1,0 +1,4 @@
+query.gql
+variables.json
+/shopify_graphql_schemas/*
+!/shopify_graphql_schemas/.keep
