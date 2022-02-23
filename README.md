@@ -46,8 +46,14 @@ $ npm install -g get-graphql-schema
 
 - get GraphQL schema file
 
-```bash
+```sh
 $ echo "{\"data\":`npx get-graphql-schema "https://$SHOPIFY_DOMAIN/admin/api/$SHOPIFY_API_VERSION/graphql.json" -h X-Shopify-Access-Token=$SHOPIFY_TOKEN -j`}" | jq > shopify_graphql_schemas/$SHOPIFY_API_VERSION.json
+```
+
+- create `.graphqlrc.json` for LSP
+
+```sh
+$ echo "{\"schema\": \"shopify_graphql_schemas/$SHOPIFY_API_VERSION.json\"}" | jq > .graphqlrc.json
 ```
 
 ## Query GraphQL

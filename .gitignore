@@ -1,4 +1,5 @@
 query.gql
 variables.json
+.graphqlrc.json
 /shopify_graphql_schemas/*
 !/shopify_graphql_schemas/.keep
