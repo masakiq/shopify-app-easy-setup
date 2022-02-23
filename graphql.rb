@@ -19,3 +19,5 @@ query = client.parse(query_string)
 result = client.query(query, variables: variables)
 
 puts JSON.pretty_generate(result.data.to_h)
+puts JSON.pretty_generate(result.extensions.to_h)
+puts JSON.pretty_generate(result.errors.to_h)
